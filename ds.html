@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Langages de structuration de contenus</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+
+    <!-- Style intégré -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            margin: 1%;
+            background-color: #0099f0;
+            background-image: url(images/motif-b2.png);
+            background-repeat: no-repeat;
+        }
+      
+
+    </style>
+
+<!-- ======================================================================================== -->
+<!-- Alexandria IS DISTRIBUTED "AS IS". NO WARRANTY OF ANY KIND IS EXPRESSED OR IMPLIED. -->
+<!-- YOU USE AT YOUR OWN RISK. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF -->
+<!-- PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE. -->
+<!-- ======================================================================================== -->
+
+<!-- **************************************************************************************** -->
+<!-- Alexandria's parameters for Webmasters -->
+<!-- Download and place on your site the "alexandria.wm.js" to update your special terms. -->
+<!-- Customization is only possible for registered customers. -->
+<!-- **************************************************************************************** -->
+<script type="text/javascript" language="JavaScript1.2" src="/alexandria-memodata/alexandria.wm.fr.js"></script>
+
+<!-- **************************************************************************************** -->
+<!-- Alexandria's engine -->
+<!-- Copy the lines below in each page you want Alexandria's functionalities to be available. -->
+<!-- **************************************************************************************** -->
+<script type="text/javascript" language="JavaScript1.2" src="http://www.sensagent.com/alexandria/scripts/alexandria.main.js"></script>
+<link rel=StyleSheet href="http://www.sensagent.com/alexandria/css/alexandria.window.css" type="text/css">
+
+<!-- ======================================================================================== -->
+</head>
+
+<body>
+    <!-- En-tête avec logo et titre -->
+    <header>
+              <a href="https://www.w3schools.com/"><img src="images/3wscools.png" alt="3Wschools" style="display: block; margin-left: auto; margin-right: auto; position: absolute; top: 20px; left: 20px; width: 6%; height: 10%;"></a>
+        <h1>Langages de structuration de contenus</h1>
+	<h2 class="sub">Documents structurés</h2>
+       
+    </header>
+
+    <!-- Menu de navigation -->
+    <nav>
+        <ul>
+            <li><a href="#html">HTML</a></li>
+            <li><a href="#xml">XML</a></li>
+            <li><a href="#json">JSON</a></li>
+            <li><a href="#markdown">Markdown</a></li>
+            <li><a href="#latex">LaTeX</a></li>
+            <li><a href="#css">CSS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+<!-- Contenu principal (sections) -->
+        <div class="main-content">
+            <!-- HTML -->
+            <section id="html">
+                <h2>HTML (HyperText Markup Language)</h2>
+                <p>
+                   HTML est le langage de balisage standard utilisé pour structurer et organiser le contenu d’une page Web. Il définit la hiérarchie des titres, des paragraphes, des images et des liens, permettant aux navigateurs d’afficher correctement les informations. Facile à apprendre, il constitue la base de toute page Web et s’utilise souvent conjointement avec CSS et JavaScript. 
+                    Voici un exemple d’un snippet HTML :
+                </p>
+                <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Exemple&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Bonjour, monde !&lt;/h1&gt;
+    &lt;p&gt;Ceci est un paragraphe en HTML.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+                </code></pre>
+            </section>
+
+            <!-- XML -->
+            <section id="xml">
+                <h2>XML (eXtensible Markup Language)</h2>
+                <p>
+                    XML est un langage de balisage générique, conçu pour stocker et transporter des données de manière structurée et lisible. Il n’impose pas de balises prédéfinies, ce qui le rend flexible pour créer des formats personnalisés. XML est souvent utilisé pour l’échange d’informations entre applications, la configuration de logiciels ou la description de documents complexes.  
+                    Exemple de document XML :
+                </p>
+                <pre><code>&lt;note&gt;
+  &lt;to&gt;Alice&lt;/to&gt;
+  &lt;from&gt;Bob&lt;/from&gt;
+  &lt;heading&gt;Salut!&lt;/heading&gt;
+  &lt;body&gt;Petit message en XML&lt;/body&gt;
+&lt;/note&gt;
+                </code></pre>
+            </section>
+
+            <!-- JSON -->
+            <section id="json">
+                <h2>JSON (JavaScript Object Notation)</h2>
+                <p>
+                    JSON est un format léger d’échange de données, dérivé de la syntaxe JavaScript, mais utilisable par de nombreux langages. Il est particulièrement apprécié pour son aspect lisible et sa simplicité, facilitant la communication entre un serveur et un client (API). JSON est devenu un standard incontournable dans la conception de services web modernes. 
+                    Exemple de fichier JSON :
+                </p>
+                <pre><code>{
+  "nom": "Dupont",
+  "prenom": "Jean",
+  "age": 30,
+  "interets": ["Musique", "Sport", "Lecture"]
+}
+                </code></pre>
+            </section>
+
+            <!-- Markdown -->
+            <section id="markdown">
+                <h2>Markdown</h2>
+                <p>
+                    Markdown est un langage de balisage léger qui permet de rédiger rapidement du texte mis en forme (titres, listes, liens, images) en utilisant une syntaxe simple. Très populaire sur les plateformes de développement (comme GitHub), il se convertit facilement en HTML. Il permet de se concentrer sur le contenu plutôt que sur la mise en page, tout en restant lisible en brut.  
+                    Exemple de syntaxe Markdown :
+                </p>
+                <pre><code># Titre de niveau 1
+
+**Texte en gras** et *texte en italique*.
+
+- Liste
+- à
+- Puces
+
+[Un lien vers un site](https://exemple.com)
+                </code></pre>
+            </section>
+
+            <!-- LaTeX -->
+            <section id="latex">
+                <h2>LaTeX</h2>
+                <p>
+                    LaTeX est un langage de composition de documents reconnu pour sa puissance dans le rendu de formules mathématiques et de textes scientifiques. Il sépare clairement le contenu (texte, formules) de la mise en page et produit des rendus professionnels (articles académiques, présentations). Idéal pour gérer efficacement les bibliographies, index et références croisées, LaTeX est largement adopté dans le monde universitaire et de la recherche. 
+                    Exemple de document LaTeX :
+                </p>
+                <pre><code>\documentclass{article}
+\begin{document}
+
+\section{Introduction}
+Voici un exemple de texte en \LaTeX.
+
+\begin{equation}
+E = mc^2
+\end{equation}
+
+\end{document}
+                </code></pre>
+            </section>
+
+            <!-- CSS -->
+            <section id="css">
+                <h2>CSS (Cascading Style Sheets)</h2>
+                <p>
+                    CSS est le langage qui décrit l’apparence visuelle et la mise en page d’un document HTML. Il permet de définir les couleurs, la taille et la police des textes, l’agencement des éléments ou encore les effets visuels et les animations. Grâce à CSS, il est possible de séparer clairement la structure du contenu (HTML) de sa présentation, rendant la maintenance et l’évolution d’un site plus simples.
+                    Exemple de code CSS :
+                </p>
+                <pre><code>body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  color: #333;
+}
+                </code></pre>
+            </section>
+        </div>
+
+        <!-- Bloc d'information à droite -->
+        <aside class="about">
+	    <p>
+                Cette page présente plusieurs langages de structuration 
+                (HTML, XML, JSON, Markdown, LaTeX et CSS).<br> 
+                Ces langages sont tous très utiles pour créer et mettre en forme des contenus.
+            </p>
+        </aside>
+
+        <aside class="qrcode">
+            <img src="images/w3schools-qrc.png" alt="QR Code d'accès au site w3schools">
+        </aside>
+    </div>
+
+  <!-- plus de détails et cas d’utilisation -->
+    <aside class="details">
+        <h3>En savoir plus :</h3>
+        
+        <h4>HTML</h4>
+        <p>
+            <strong>Principales utilisations :</strong>  
+            Création de la structure de pages web, intégration d’images, de liens, de formulaires et d’éléments interactifs.  
+            <br><strong>Cas d’usage :</strong> Sites web vitrine, blogs, email marketing (modèles HTML), etc.
+        </p>
+        <h4>XML</h4>
+
+        <p>
+            <strong>Principales utilisations :</strong>  
+            Stockage et transfert de données, configuration d’applications, définition de langages spécialisés (par ex. RSS, SVG).  
+           <br><strong>Cas d’usage :</strong> Fichiers de configuration (Android, logiciels bureautiques), flux RSS, interopérabilité entre systèmes.
+        </p>
+
+        <h4>JSON</h4>
+        <p>
+            <strong>Principales utilisations :</strong>  
+            Transfert de données léger entre serveur et client, souvent dans les APIs REST.  
+            <br><strong>Cas d’usage :</strong> Réponses d’API (ex. JavaScript/Node.js, Python Flask/Django), stockage de paramètres d’application, fichiers de configuration.
+        </p>
+
+        <h4>Markdown</h4>
+        <p>
+            <strong>Principales utilisations :</strong>  
+            Rédaction simple et rapide de documents ou de README, blogs statiques, documentation de projets open-source.  
+            <br><strong>Cas d’usage :</strong> README GitHub, wiki, publications rapides sur des plateformes de blogging.
+        </p>
+
+        <h4>LaTeX</h4>
+        <p>
+            <strong>Principales utilisations :</strong>  
+            Création de documents scientifiques, articles de recherche, rapports, présentations (via Beamer).  
+            <br><strong>Cas d’usage :</strong> Thèses universitaires, articles de revues, documents nécessitant des formules mathématiques complexes.
+        </p>
+
+        <h4>CSS</h4>
+        <p>
+            <strong>Principales utilisations :</strong>  
+            Mise en forme et design des pages web : gestion des couleurs, typographies, espacements, animations.  
+            <br><strong>Cas d’usage :</strong> Intégration web, thèmes responsives, frameworks CSS (Bootstrap, Tailwind), animations et transitions.
+        </p>
+    </aside>
+
+    <hr>
+
+    <!-- Pied de page -->
+    <footer>
+        Tous droits réservés &copy; N. ELM. <br>
+        <pre style="font-size: 30%">
+.__   __.   ______    __    __  .______       _______  _______      _______  __      .___  ___.   ______           ___       _______  
+|  \ |  |  /  __  \  |  |  |  | |   _  \     |   ____||       \    |   ____||  |     |   \/   |  /  __  \         /   \     |       \ 
+|   \|  | |  |  |  | |  |  |  | |  |_)  |    |  |__   |  .--.  |   |  |__   |  |     |  \  /  | |  |  |  |       /  ^  \    |  .--.  |
+|  . `  | |  |  |  | |  |  |  | |      /     |   __|  |  |  |  |   |   __|  |  |     |  |\/|  | |  |  |  |      /  /_\  \   |  |  |  |
+|  |\   | |  `--'  | |  `--'  | |  |\  \----.|  |____ |  '--'  |   |  |____ |  `----.|  |  |  | |  `--'  '--.  /  _____  \  |  '--'  |
+|__| \__|  \______/   \______/  | _| `._____||_______||_______/    |_______||_______||__|  |__|  \_____\_____\/__/     \__\ |_______/  
+</p>   
+<!-- ascii to image : phttps://patorjk.com/software/taag/#p=display&f=Star%20Wars&t=Mon%20CV" -->     
+</pre>
+
+
+    </footer>
+</body>
+</html>
