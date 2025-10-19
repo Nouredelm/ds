@@ -4,16 +4,151 @@
     <title>Langages de structuration de contenus</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+<style>
+
+
+body {
+	display: flex; 
+	min-height: 800px;
+	border: 6px solid grey;
+	flex-direction: column;
+	align-items: center;
+	
+	
+}
+.box {
+display: flex;
+flex-direction: column;
+padding-left: 2em;
+padding-right: 2em;
+} 
+
+/* --- En-tête --- */
+header {
+background-color: #0071cF;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: 300;
+    color: #adb5bd;
+}
+
+/* --- Barre de navigation --- */
+
+nav {
+    background-color: #495057;
+    padding: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.8rem 1.2rem;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #6c757d;
+}
+
+/* --- Contenu principal --- */
+.main-content {
+    flex: 6; /* Prend 3 parts de l'espace disponible */
+	display: flex; 
+		width: 80%;
+		flex-direction: column;
+		align-items: center;
+}
+
+.main-content section {
+    background-color: #fff;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    color: black;
+    border-top: 2px solid black;
+    padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	background-color: lightgrey;
+	
+}
+section h4 {
+    color: maroon;
+    border-top: 2px dashed #e9ecef;
+    padding-bottom: 0.5rem;
+	padding-left: 0.5rem;
+	box-radius: 2 2 3 3;
+	
+}
+
+.more-info p {
+    font-size: 80%; 
+	padding-left: 1em;
+	
+}
+
+
+
+
+/* --- Styles pour les blocs de code --- */
+pre {
+    background-color: #282c34;
+    color: #abb2bf;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto; /* Permet de faire défiler le code horizontalement si besoin */
+    font-family: "Fira Code", "Courier New", monospace;
+    font-size: 0.9em;
+	width: 50%;
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+/* --- Pied de page --- */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #343a40;
+    color: #adb5bd;
+    margin-top: 2rem;
+}
+</style>
 </head>
 <body>
-
-    <header>
+   
+	
+<div class="container">
+ <div id="header">
+    <header id="header">
         <h1>Langages de structuration de contenus</h1>
         <h2>Documents structurés</h2>
     </header>
-
-    <nav>
+	<nav>
         <ul>
             <li><a href="#html">HTML</a></li>
             <li><a href="#xml">XML</a></li>
@@ -23,15 +158,14 @@
             <li><a href="#css">CSS</a></li>
         </ul>
     </nav>
-
-    <div class="container">
-        
-        <main class="main-content">
-            <section id="html">
+  </div>
+  <div id="content">
+	
+		    <section class="box" id="html">
                 <h2>HTML (HyperText Markup Language)</h2>
                 <p>HTML est le langage de balisage standard utilisé pour structurer et organiser le contenu d’une page Web. Il définit la hiérarchie des titres, des paragraphes, des images et des liens.</p>
                 <div class="details">
-                    <p><strong>Cas d’usage :</strong> Sites web, applications web monopages (SPAs), e-mails marketing, documents structurés pour des liseuses.</p>
+                    <h4>Cas d’usage :</h4> <p>Sites web, applications web monopages (SPAs), e-mails marketing, documents structurés pour des liseuses.</p>
                 </div>
                 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
@@ -48,8 +182,7 @@
                     </ul>
                 </div>
             </section>
-
-            <section id="xml">
+		<section class="box" id="xml">
                 <h2>XML (eXtensible Markup Language)</h2>
                 <p>XML est un langage conçu pour stocker et transporter des données de manière lisible. Sa flexibilité lui permet de définir des formats de documents personnalisés.</p>
                 <div class="details">
@@ -68,9 +201,9 @@
                         <li><a href="https://developer.mozilla.org/fr/docs/Web/XML/XML_introduction" target="_blank">MDN Web Docs - XML</a></li>
                     </ul>
                 </div>
-            </section>
-
-            <section id="json">
+            </section> 
+			
+			<section class="box" id="json">
                 <h2>JSON (JavaScript Object Notation)</h2>
                 <p>JSON est un format léger d’échange de données. Facile à lire et à écrire pour les humains, il est aussi simple à analyser et à générer pour les machines.</p>
                 <div class="details">
@@ -91,7 +224,7 @@
                 </div>
             </section>
 
-            <section id="markdown">
+            <section class="box" id="markdown">
                 <h2>Markdown</h2>
                 <p>Markdown est un langage de balisage léger qui permet de formater du texte via une syntaxe simple. Il est conçu pour être facilement convertible en HTML.</p>
                 <div class="details">
@@ -111,7 +244,7 @@
                 </div>
             </section>
 
-            <section id="latex">
+            <section class="box" id="latex">
                 <h2>LaTeX</h2>
                 <p>LaTeX est un système de composition de documents, idéal pour la production de documents techniques et scientifiques de haute qualité typographique.</p>
                 <div class="details">
@@ -132,7 +265,7 @@ $E = mc^2$
                 </div>
             </section>
 
-            <section id="css">
+            <section class="box" id="css">
                 <h2>CSS (Cascading Style Sheets)</h2>
                 <p>CSS est le langage qui décrit l’apparence visuelle d’un document HTML. Il gère les couleurs, les polices, l'agencement, les animations et le design responsive.</p>
                 <div class="details">
@@ -152,25 +285,14 @@ $E = mc^2$
                     </ul>
                 </div>
             </section>
-        </main>
-
-        <aside class="sidebar">
-            <div class="about">
-                <h3>À propos</h3>
-                <p>Cette page présente plusieurs langages utiles pour créer et mettre en forme des contenus structurés.</p>
-                 <a href="https://www.w3schools.com/" target="_blank">
-                    <img src="images/3wscools.png" alt="Logo 3Wschools" class="logo">
-                </a>
-                <img src="images/w3schools-qrc.png" alt="QR Code d'accès au site w3schools" class="qrcode">
-            </div>
-        </aside>
-    </div>
-
+			
+	</div>
+ <div id="footer">
     <footer>
-        <p>Tous droits réservés &copy; N. E. 2025</p>
+        <p>Tous droits réservés &copy; N. ELM. 2025</p>
     </footer>
-
+ </div>
+</div>
 </body>
+
 </html>
-
-
